@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Free Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="logo" href="#">MySite</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Build. Publish. Shine.</h1>
+      <p>A clean, fast, totally free website—made today.</p>
+      <a class="cta" href="#projects">View Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p>I create simple, beautiful web experiences. This site is hosted free and loads fast.</p>
+    </section>
+
+    <section id="projects" class="section grid">
+      <article class="card">
+        <h3>Project One</h3>
+        <p>Short description of what it does and why it’s cool.</p>
+        <a class="link" href="#">Learn more →</a>
+      </article>
+      <article class="card">
+        <h3>Project Two</h3>
+        <p>Another highlight with a clear call to action.</p>
+        <a class="link" href="#">Learn more →</a>
+      </article>
+      <article class="card">
+        <h3>Project Three</h3>
+        <p>Show outcomes, impact, or tech stack.</p>
+        <a class="link" href="#">Learn more →</a>
+      </article>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> MySite · Built free with HTML/CSS/JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
